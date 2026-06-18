@@ -1,6 +1,6 @@
 # 🧰 Weles Tool Designer
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://welesai.com)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/weles-ai-agent/tool-designer)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 **Weles Tool Designer** is a **no-code tool builder** for AI agents. Design, manage, and test HTTP-based tools that AI agents can securely invoke — all without writing a single line of glue code.
