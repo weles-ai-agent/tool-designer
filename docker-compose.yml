@@ -1,0 +1,14 @@
+services:
+  tool-designer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weles-tool-designer
+    ports:
+      - "3000:8000"
+    volumes:
+      - tool-designer-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  tool-designer-data:

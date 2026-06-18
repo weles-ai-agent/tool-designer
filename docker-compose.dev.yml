@@ -1,0 +1,37 @@
+# Development mode — mounts source code for hot-reload
+# Backend: uvicorn --reload on port 8000
+# Frontend: Vite dev server on port 5173 (proxies /api to backend)
+
+services:
+  backend-dev:
+    image: python:3.12-slim
+    container_name: tool-designer-backend-dev
+    working_dir: /app
+    command: >
+      sh -c "pip install --no-cache-dir -r requirements.txt &&
+             uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - tool-designer-data:/app/data
+    environment:
+      - TOOLS_STORE_PATH=/app/data/tools_store.json
+
+  frontend-dev:
+    image: node:20-alpine
+    container_name: tool-designer-frontend-dev
+    working_dir: /app
+    command: >
+      sh -c "npm install && npx vite --host 0.0.0.0 --port 5173"
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend-dev
+
+volumes:
+  tool-designer-data:
