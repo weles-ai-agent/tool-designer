@@ -5,9 +5,9 @@
 
 **Weles Tool Designer** is a **no-code tool builder** for AI agents. Design, manage, and test HTTP-based tools that AI agents can securely invoke — all without writing a single line of glue code.
 
-Built for the [**Weles**](https://welesai.com) platform — a next-generation **Intelligent Document Processing (IDP)** system powered by artificial intelligence.
+Built for the [**Weles**](https://welesai.com) platform — a platform for building local AI agents with Intelligent Document Processing (IDP) capabilities at its core.
 
-> 🔗 **Weles** — AI-driven document processing at scale. Visit [welesai.com](https://welesai.com)
+> 🔗 **Weles** — Move beyond legacy OCR. Weles is a next-generation AI-powered IDP and cognitive AI assistant platform that orchestrates specialized agents to process, analyze, and discuss your most complex documents — with 100% data sovereignty. Visit [welesai.com](https://welesai.com)
 
 ---
 
