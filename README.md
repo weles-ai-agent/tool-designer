@@ -52,10 +52,7 @@ App available at **http://localhost:3000**
 docker compose -f docker-compose.dev.yml up
 ```
 
-| Service | URL |
-|---------|-----|
-| Frontend (Vite) | http://localhost:5173 |
-| Backend API | http://localhost:8000 |
+App available at **http://localhost:3000**
 
 ### Local (without Docker)
 
